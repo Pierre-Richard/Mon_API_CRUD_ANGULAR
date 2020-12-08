@@ -1,0 +1,26 @@
+<h1>Tableau des personnes</h1>
+
+<ul>
+    <li *ngFor="let person of persons">
+        <table border="1px">
+            <tr>
+              <th>Nom</th>
+              <th>Prenom</th>
+              <th>Numero</th>
+              <th>Rue</th>
+              <th>Cp</th>
+            </tr>
+            <tr>
+              <td>{{person.nom}}</td>
+              <td>{{person.prenom}}</td>
+              <td>{{person.numero}}</td>
+              <td>{{person.rue}}</td>
+              <td>{{person.cp}}</td>
+              <td> -->
+                 <!-- <button type="submit">Modifier</button> -->
+                <button (click)="onDelete(person.id)">Delete</button> 
+              </td> 
+            </tr>
+        </table>
+    </li>
+</ul>

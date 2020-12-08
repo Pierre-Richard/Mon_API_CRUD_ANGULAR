@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "nom": "Mayer",
+      "prenom": "Jacob",
+      "numero": 89,
+      "rue": "Rue du progrès",
+      "cp": 95
+    },
+    {
+      "id": 3,
+      "nom": "Mayer",
+      "prenom": "Pierre-Richard",
+      "numero": "",
+      "rue": "",
+      "cp": 95460
+    },
+    {
+      "id": 4,
+      "nom": "kbkjbn;jnn",
+      "prenom": "Pierre-Richard",
+      "numero": null,
+      "rue": "",
+      "cp": 95460
+    }
+  ]
+}
