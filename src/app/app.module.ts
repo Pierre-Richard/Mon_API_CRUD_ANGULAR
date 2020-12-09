@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormComponent } from './pages/form/form.component';
-import { PersonComponent } from './pages/person/person.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -18,8 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    FormComponent,
-    PersonComponent,
+    FormComponent
 
   ],
   imports: [

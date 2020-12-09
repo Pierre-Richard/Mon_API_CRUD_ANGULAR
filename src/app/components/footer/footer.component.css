@@ -3,5 +3,5 @@
     height: 40px;
     background-color: rgb(69, 80, 80);
     bottom: 0;
-    position: fixed;
+    position: relative;
 }

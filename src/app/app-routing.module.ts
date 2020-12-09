@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormComponent } from './pages/form/form.component';
-import { PersonComponent } from './pages/person/person.component';
+
 
 
 const routes: Routes = [
-  { path: "form", component:FormComponent},
-  { path: "person", component:PersonComponent}
+  { path: "form", component:FormComponent}
 ];
 
 @NgModule({
