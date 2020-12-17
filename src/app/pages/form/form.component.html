@@ -27,12 +27,11 @@ avec mon "userProfile" qui est ecrit dans le form.components
           <input class="form-control" [(ngModel)] = "myPerson.cp" type="number" formControlName="cp" placeholder="Code Postal">
         </div> 
     </div>
-    <button *ngIf = "!myCondition" class="btn btn-primary" (click)= "addPersons()" type="submit">Add</button>
-    <button  *ngIf = "myCondition" class="btn btn-success" (click)= "updateMyPerson()" type="submit">Update</button>
+    <button *ngIf = "!myCondition" class="btn btn-primary btn-block w-50 mx-auto" (click)= "addPersons()" type="submit">Add</button>
+    <button  *ngIf = "myCondition" class="btn btn-success btn-block w-50 mx-auto" (click)= "updateMyPerson()" type="submit">Update</button>
 </form>
-
-<h1>Tableau des personnes</h1>
-<table class="table table-striped table-hover">
+<div *ngIf = "persons.length == 0" class="alert alert-warning w-50 mx-auto">il y a personnes dans le tableau</div>
+<table *ngIf = "persons.length > 0" class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Nom</th>

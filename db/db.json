@@ -1,36 +1,3 @@
 {
-  "students": [
-    {
-      "id": 2,
-      "nom": "Mayer",
-      "prenom": "Jacob",
-      "numero": 89,
-      "rue": "Rue du progrès",
-      "cp": 95
-    },
-    {
-      "id": 5,
-      "nom": "Bienvenue",
-      "prenom": "Afrique",
-      "numero": 4,
-      "rue": "4 impasse Gillet",
-      "cp": 95460
-    },
-    {
-      "id": 6,
-      "nom": "Lutumaa",
-      "prenom": "Herve",
-      "numero": 36,
-      "rue": "Emile Cordon",
-      "cp": 95460
-    },
-    {
-      "id": 7,
-      "nom": "Kabamba",
-      "prenom": "Magalie",
-      "numero": 8,
-      "rue": "rue de la Gare",
-      "cp": 95800
-    }
-  ]
+  "students": []
 }

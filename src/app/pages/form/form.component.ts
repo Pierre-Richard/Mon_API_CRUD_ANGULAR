@@ -12,8 +12,9 @@ import { Person } from 'src/app/model/person';
 export class FormComponent implements OnInit {
 
  userProfile: FormGroup;
- 
- persons: Person[];
+
+ persons: Person[]=[];
+
   myPerson: any = {
     id: "",
     nom: "",
@@ -24,6 +25,7 @@ export class FormComponent implements OnInit {
      
   }
   myCondition = false;
+
 
   constructor(private fb: FormBuilder,private service: StudentServiceService) {
 
@@ -59,10 +61,11 @@ export class FormComponent implements OnInit {
 
     addPersons(){
       this.service.postPerson(this.myPerson)
-      .subscribe( (person) =>{
+      .subscribe( (persons) =>{
         this.persons = [...this.persons]
         /* mise à jour */
         this.ngOnInit();
+       this.emptyInput(); 
       })
     }
 
@@ -77,6 +80,7 @@ export class FormComponent implements OnInit {
     this.service.updatePerson(this.myPerson)
     .subscribe( students =>{
       this.myCondition = false;
+      this.emptyInput();
     })
   }
 
@@ -89,5 +93,17 @@ export class FormComponent implements OnInit {
     })
   }
   
+  //vider les inputs
+
+   emptyInput(){
+     this.myPerson = { 
+      id: "",
+      nom: "",
+      prenom: "",
+      numero: "",
+      rue: "",
+      cp: "",
+     }
+   }
 
 }
